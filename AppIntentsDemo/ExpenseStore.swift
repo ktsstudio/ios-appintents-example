@@ -17,11 +17,6 @@ struct Expense {
     }
 }
 
-extension UserDefaults {
-    
-    static let shared = UserDefaults(suiteName: "group.ru.noorganization.AppIntentsDemo")!
-}
-
 class ExpenseStore: ObservableObject {
     
     @Published var expenses: [Category: Double] {
@@ -31,7 +26,7 @@ class ExpenseStore: ObservableObject {
                     (key.rawValue, value)
                 }
             )
-            UserDefaults.shared.set(dict, forKey: "expenses")
+            UserDefaults.standard.set(dict, forKey: "expenses")
             update()
         }
     }
@@ -43,7 +38,7 @@ class ExpenseStore: ObservableObject {
     static let shared = ExpenseStore()
     
     private init() {
-        if let data = UserDefaults.shared.dictionary(forKey: "expenses") as? [String: Double] {
+        if let data = UserDefaults.standard.dictionary(forKey: "expenses") as? [String: Double] {
             self.expenses = Dictionary(
                 uniqueKeysWithValues: data.compactMap { (key, value) in
                     if let category = Category(rawValue: key) {

@@ -41,6 +41,7 @@
 		1578C2CE2CDB38CC00B5F49A /* GetExpensesChartIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetExpensesChartIntent.swift; sourceTree = "<group>"; };
 		1578C2D82CDB4C4B00B5F49A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		1578C2DA2CDB4C4B00B5F49A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		158555A72CDE5D3D00D00BF1 /* AppIntentsDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppIntentsDemo.entitlements; sourceTree = "<group>"; };
 		15A67D5E2CD24C2A0001353F /* GetTotalExpenseIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTotalExpenseIntent.swift; sourceTree = "<group>"; };
 		15C20F732CD7F521005B2851 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		15C4B86E2CCD790B00872231 /* AppIntentsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppIntentsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +106,7 @@
 		15C4B8702CCD790B00872231 /* AppIntentsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				158555A72CDE5D3D00D00BF1 /* AppIntentsDemo.entitlements */,
 				15C4B8802CCD869E00872231 /* ExpenseStore.swift */,
 				15A67D5D2CD24BFC0001353F /* Intents */,
 				15C4B8752CCD790D00872231 /* Assets.xcassets */,
